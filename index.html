@@ -22,14 +22,13 @@
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                    <a class="navbar-brand" href="https://ffews.github.io"><img src="artworks/logo/ffews.png" class="img-responsive"></a>
+                    <a class="navbar-brand" href="index.html"><img src="artworks/logo/ffews.png" class="img-responsive"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
 						<li><a href="rain.html"><p class="navbar-text">Rain Forecast</p></a></li>
-                        <li><a href="#"><p class="navbar-text">Hydrograph</p></a></li>
                         <li><a href="about.html"><p class="navbar-text">About Us</p></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
@@ -43,7 +42,20 @@
         </div>
         <div class="row"><div class="alert alert-danger"><p class="text-center">The forecast published here is currently provided in experimental basis.</p></div></div>
         <div class="row">
-            <div class="col-md-6"></div>
+            <div class="col-md-6">
+				<div class="row">
+					<div class="panel panel-primary">
+						<div class="panel-heading">Hydrograph</div>
+						<div class="panel-body">COMING SOON!</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Meteogram</div>
+						<div class="panel-body">COMING SOON!</div>
+					</div>
+				</div>
+				<div class="row">
+				</div>
+            </div>
             <div class="col-md-6">
 				<div class="panel panel-primary">
 					<div class="panel-heading">Map Overview</div>
@@ -63,14 +75,6 @@
 							url: 'https://ffews.github.io/maplayers/basinoutline.kml',
 							map: map
 							});
-							
-						var myLatlng = new google.maps.LatLng(26,91);
-
-						var marker = new google.maps.Marker({
-							position: myLatlng,
-							title:"Hello World!"
-							});
-						marker.setMap(map);
                     }
                 </script>
                 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>

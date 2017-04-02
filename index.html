@@ -16,6 +16,8 @@
 </head>
 <body>
     <div id="content">
+		
+		<!-- Navigation Section Start-->
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-default">
@@ -40,11 +42,43 @@
                 </nav>
             </div>
         </div>
+        <!-- Navigation Section Ends -->
+        
+        <!-- Experimental Warning -->
         <div class="row">
 			<div class="col-md-12">
 				<div class="alert alert-danger"><p class="text-center">The forecast published here is currently provided in experimental basis.</p></div>
 			</div>
 		</div>
+		<!-- Experimental Warning Ends -->
+		
+		<!-- Map Content -->
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Map Overview</div>
+				<div class="panel-body"><div id="map"></div></div>
+			</div>
+			<script>
+				function initMap() {
+					var map = new google.maps.Map(document.getElementById('map'), {
+						center: {lat: 23.8103, lng: 90.4125},
+						zoom: 7,
+						disableDefaultUI: true,
+						minZoom: 7,
+						mapTypeId: "hybrid"
+						});
+						
+					var ctaLayer = new google.maps.KmlLayer({
+						url: 'https://ffews.github.io/maplayers/basinoutline.kml',
+						map: map
+						});
+				}
+			</script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>
+		</div>
+		<!-- Map content Ends -->
+		
+		<!-- Map content left panel -->
         <div class="row">
             <div class="col-md-6">
 				<div class="row">
@@ -65,34 +99,16 @@
 				</div>	
 			
             </div>
-            <div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Map Overview</div>
-					<div class="panel-body"><div id="map"></div></div>
-				</div>
-                <script>
-                    function initMap() {
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: {lat: 23.8103, lng: 90.4125},
-                            zoom: 7,
-                            disableDefaultUI: true,
-                            minZoom: 7,
-                            mapTypeId: "hybrid"
-                            });
-                            
-                        var ctaLayer = new google.maps.KmlLayer({
-							url: 'https://ffews.github.io/maplayers/basinoutline.kml',
-							map: map
-							});
-                    }
-                </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>
-            </div>
+
         </div>
+        
+        <!-- Footer Starts -->
         <div class="row">
             <div class="col-md-2"><div class="text-left"><img src="artworks/logo/buet.png" class="img-responsive"></div></div>
             <div class="col-md-2"><div class="text-left"><img src="artworks/logo/ifad.png"></div></div>
             <div class="col-md-8"><p class="text-left">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
         </div>
+        <!-- Footer Ends -->
+        
     </div>    
 </body>

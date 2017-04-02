@@ -16,58 +16,43 @@
 </head>
 <body>
     <div id="content">
+		<!-- Navigation control -->
         <div class="row">
             <div class="col-md-12">
                 <nav class="navbar navbar-default">
                 <div class="container-fluid">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                    <a class="navbar-brand" href="https://ffews.github.io"><img src="artworks/logo/ffews.png" class="img-responsive"></a>
+                    <a class="navbar-brand" href="index.html"><img src="artworks/logo/ffews.png" class="img-responsive"></a>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Hydrograph <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">About Us</a></li>
+						<li><a href="rain.html"><p class="navbar-text">Rain Forecast</p></a></li>
+                        <li><a href="#"><p class="navbar-text">Hydrograph</p></a></li>
+                        <li><a href="about.html"><p class="navbar-text">About Us</p></a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="http://www.ffwc.gov.bd/">FFWC</a></li>
-                        <li><a href="http://www.bmd.gov.bd/">BMD</a></li>
+                        <li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
+                        <li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
                     </ul>
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
                 </nav>
             </div>
         </div>
-        <div class="row"><div class = "alert alert-info">The forecast published here is currently provided in experimental basis.</div></div>
+        
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-                <div id="map"></div>
-                <script>
-                    var map;
-                    function initMap() {
-                        map = new google.maps.Map(document.getElementById('map'), {
-                            center: {lat: 23.8103, lng: 90.4125},
-                            zoom: 7
-                            });
-                    }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"
-    async defer></script>
-            </div>
+			<div class="col-md-12">
+				<p class="text-center">Flash Flood Early Warning System (FFEWS) <br/> Details coming soon!</p>
+			</div>
         </div>
+
         <div class="row">
-            <div class="col-md-2"><img src="artworks/logo/buet.png" class="img-responsive"></div>
-            <div class="col-md-8"><p class="text-center">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
-            <div class="col-md-2"><div class="text-center"><img src="artworks/logo/ifad.png"></div></div>
+            <div class="col-md-2"><div class="text-left"><img src="artworks/logo/buet.png" class="img-responsive"></div></div>
+            <div class="col-md-2"><div class="text-left"><img src="artworks/logo/ifad.png"></div></div>
+            <div class="col-md-8"><p class="text-left">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
         </div>
     </div>    
 </body>

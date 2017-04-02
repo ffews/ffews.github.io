@@ -35,3 +35,7 @@ html, body {
     height: 550px;
     background: deepskyblue;
 }
+
+.product .img-responsive {
+    margin: 0 auto;
+}

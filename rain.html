@@ -43,38 +43,9 @@
         </div>
         <div class="row"><div class="alert alert-danger"><p class="text-center">The forecast published here is currently provided in experimental basis.</p></div></div>
         <div class="row">
-            <div class="col-md-6"></div>
-            <div class="col-md-6">
-				<div class="panel panel-primary">
-					<div class="panel-heading">Map Overview</div>
-					<div class="panel-body"><div id="map"></div></div>
-				</div>
-                <script>
-                    function initMap() {
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            center: {lat: 23.8103, lng: 90.4125},
-                            zoom: 7,
-                            disableDefaultUI: true,
-                            minZoom: 7,
-                            mapTypeId: "hybrid"
-                            });
-                            
-                        var ctaLayer = new google.maps.KmlLayer({
-							url: 'https://ffews.github.io/maplayers/basinoutline.kml',
-							map: map
-							});
-							
-						var myLatlng = new google.maps.LatLng(26,91);
-
-						var marker = new google.maps.Marker({
-							position: myLatlng,
-							title:"Hello World!"
-							});
-						marker.setMap(map);
-                    }
-                </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>
-            </div>
+			<div class="col-md-4"></div>
+			<div class="col-md-4"></div>
+			<div class="col-md-4"></div>
         </div>
         <div class="row">
             <div class="col-md-2"><img src="artworks/logo/buet.png" class="img-responsive"></div>

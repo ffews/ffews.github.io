@@ -59,7 +59,10 @@
                     function initMap() {
                         map = new google.maps.Map(document.getElementById('map'), {
                             center: {lat: 23.8103, lng: 90.4125},
-                            zoom: 7
+                            zoom: 7,
+                            disableDefaultUI: true,
+                            minZoom: 7,
+                            mapTypeId: "hybrid"
                             });
                     }
                 </script>

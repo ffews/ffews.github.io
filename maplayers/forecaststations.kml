@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.1">
-<Document id="Stations01">
+<Document id="ForecastStations">
 	<name>Stations01</name>
 	<Snippet maxLines="0"></Snippet>
 	<Style id="IconStyle00">
 		<IconStyle>
-			<scale>0.25</scale>
+			<scale>1</scale>
 			<Icon>
 				<href>Layer0_Symbol_25721510_0.png</href>
 			</Icon>

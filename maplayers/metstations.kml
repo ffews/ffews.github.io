@@ -2,7 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Placemark>
     <name>Sylhet</name>
-    <description><![CDATA[<a href="https://ffews.github.io/forecasts/rain/rain.000001.png"><img src="forecasts/rain/rain.000001.png" class="img-responsive"></a>]]></description>
+    <description><![CDATA[<a href="https://ffews.github.io/forecasts/rain/rain.000001.png"><img src="forecasts/rain/rain.000001.png" id="kmlimage" class="img-responsive"></a>]]></description>
     <Point>
       <coordinates>91.27207286545374,25.19295833915242</coordinates>
     </Point>

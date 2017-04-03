@@ -6,9 +6,11 @@
 	<Style id="IconStyle00">
 		<IconStyle>
 			<scale>1</scale>
+			<!--
 			<Icon>
 				<href>Layer0_Symbol_25721510_0.png</href>
 			</Icon>
+			-->
 		</IconStyle>
 		<LabelStyle>
 			<color>00000000</color>

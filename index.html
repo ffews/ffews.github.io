@@ -69,13 +69,19 @@
 						zoom: 7,
 						disableDefaultUI: true,
 						minZoom: 7,
+						maxZoom: 9,
 						mapTypeId: "hybrid"
 						});
 						
-					var ctaLayer = new google.maps.KmlLayer({
+					var basinLayer = new google.maps.KmlLayer({
 						url: 'https://ffews.github.io/maplayers/basinoutline.kml',
 						map: map
 						});
+						
+					var fstLayer = new google.maps.KmlLayer({
+						url: 'https://ffews.github.io/maplayers/forecaststations.kml',
+						map: map
+					});
 				}
 			</script>
 			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>

@@ -2,43 +2,7 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
   <Placemark>
     <name>Sylhet</name>
-    <description><![CDATA[$(document).ready(function() {});
-
-$.getScript('http://www.chartjs.org/assets/Chart.js',function(){
-  
-    var data = {
-        labels : ["January","February","March","April","May","June","July"],
-        datasets : [
-            {
-                fillColor : "rgba(220,220,220,0.5)",
-                strokeColor : "rgba(220,220,220,1)",
-                pointColor : "rgba(220,220,220,1)",
-                pointStrokeColor : "#fff",
-                data : [65,59,90,81,56,55,40]
-            },
-            {
-                fillColor : "rgba(151,187,205,0.5)",
-                strokeColor : "rgba(151,187,205,1)",
-                pointColor : "rgba(151,187,205,1)",
-                pointStrokeColor : "#fff",
-                data : [28,48,40,19,96,27,100]
-            }
-        ]
-    }
-
-    var options = {
-        animation: false
-    };
-
-    //Get the context of the canvas element we want to select
-    var c = $('#meteogram');
-    var ct = c.get(0).getContext('2d');
-    var ctx = document.getElementById("meteogram").getContext("2d");
-    /*************************************************************************/
-    //myNewChart = new Chart(ct).Doughnut(data, options);
-    myNewChart = new Chart(ctx).Line(data,options);
-
-})]]></description>
+    <description><![CDATA[<a href="forecasts/rain/rain.000001.png"><img src="forecasts/rain/rain.000001.png" class="img-responsive"></a>]]></description>
     <Point>
       <coordinates>91.25207286545374,25.19295833915242</coordinates>
     </Point>

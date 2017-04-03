@@ -83,8 +83,13 @@
 						map: map
 					});
 					
-					var metLay = new google.maps.KmlLayer({
+					var metLayer = new google.maps.KmlLayer({
 						url: 'https://ffews.github.io/maplayers/metstations.kml',
+						map: map
+					});
+					
+					var ctaLayer = new google.maps.KmlLayer({
+						url: 'https://ffews.github.io/maplayers/cta.kml',
 						map: map
 					});
 				}

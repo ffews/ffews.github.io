@@ -6,11 +6,10 @@
 	<Style id="IconStyle00">
 		<IconStyle>
 			<scale>1</scale>
-			<!--
+			<color>00000001</color>
 			<Icon>
 				<href>Layer0_Symbol_25721510_0.png</href>
 			</Icon>
-			-->
 		</IconStyle>
 		<LabelStyle>
 			<color>00000000</color>
@@ -22,7 +21,7 @@
 		</PolyStyle>
 	</Style>
 	<Folder id="FeatureLayer0">
-		<name>Stations01</name>
+		<name>Stations</name>
 		<Snippet maxLines="0"></Snippet>
 		<Placemark id="ID_00000">
 			<name>Bhogai-Kangsa</name>

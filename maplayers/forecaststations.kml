@@ -13,7 +13,7 @@
 		</IconStyle>
 		<LabelStyle>
 			<color>00000000</color>
-			<scale>0</scale>
+			<scale>1</scale>
 		</LabelStyle>
 		<PolyStyle>
 			<color>ff000000</color>

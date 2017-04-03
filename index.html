@@ -13,7 +13,6 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
-
 </head>
 <body>
     <div id="content">
@@ -103,13 +102,16 @@
 					var urlmetstations = "http://ffews.github.io/maplayers/metstations.kml"+"?dummy="+(new Date()).getTime();	
 					var metLayer = new google.maps.KmlLayer({
 						url: urlmetstations,
-						suppressInfoWindows: false,
+						suppressInfoWindows: true,
 						preserveViewport: true,
 						map: map
 					});
 					
 					metLayer.addListener('click', function(kmlEvent) {
-						var text = kmlEvent.featureData.description;
+						var content = kmlEvent.featureData.description;
+						var imglink = content.split(',');
+						//var text = imglink[0]
+						var text = '<a href="'+imglink[0]+'"><img src="'+imglink[0]+'" class="img-responsive"></a>';
 						showForecastMeteogram(text);
 					});
 					

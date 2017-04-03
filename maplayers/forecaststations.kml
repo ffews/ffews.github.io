@@ -34,7 +34,7 @@
     $(document).ready(function() {
 
 $(function () {
-        $('#hydrograph').highcharts({
+        $('#container').highcharts({
             chart: {
                 type: 'line'
             },
@@ -97,7 +97,7 @@ $(function () {
             }]
         });
 
-			var charts = $('#hydrograph').highcharts(); 
+			var charts = $('#container').highcharts(); 
 	
             charts.series[2].update({
                  marker: {

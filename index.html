@@ -105,6 +105,16 @@
 						preserveViewport: true,
 						map: map
 					});
+					
+					metLayer.addListener('click', function(kmlEvent) {
+						var text = kmlEvent.featureData.description;
+						showForecastMeteogram(text);
+					});
+					
+					function showForecastMeteogram(text) {
+						var divHydrograph = document.getElementById('meteogram');
+						divHydrograph.innerHTML = text;
+					}
 				}
 			</script>
 			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>

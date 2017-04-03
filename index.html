@@ -13,6 +13,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
+
+
 </head>
 <body>
     <div id="content">
@@ -74,22 +76,23 @@
 						});
 						
 					var basinLayer = new google.maps.KmlLayer({
-						url: 'https://ffews.github.io/maplayers/basinoutline.kml',
+						url: 'http://ffews.github.io/maplayers/basinoutline.kml',
+						suppressInfoWindows: true,
+						preserveViewport: true,
 						map: map
 						});
 						
 					var fstLayer = new google.maps.KmlLayer({
-						url: 'https://ffews.github.io/maplayers/forecaststations.kml',
+						url: 'http://ffews.github.io/maplayers/forecaststations.kml',
+						suppressInfoWindows: false,
+						preserveViewport: true,
 						map: map
 					});
 					
 					var metLayer = new google.maps.KmlLayer({
-						url: 'https://ffews.github.io/maplayers/metstations.kml',
-						map: map
-					});
-					
-					var ctaLayer = new google.maps.KmlLayer({
-						url: 'https://ffews.github.io/maplayers/cta.kml',
+						url: 'http://ffews.github.io/maplayers/metstations.kml',
+						suppressInfoWindows: false,
+						preserveViewport: true,
 						map: map
 					});
 				}

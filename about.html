@@ -11,6 +11,7 @@
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="initial-scale=1.0">
     <meta charset="utf-8">
 </head>
@@ -41,11 +42,14 @@
 					<li><a href="rain.html"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Rain Forecast</p></a></li>
 					<li><a href="#"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Flood Forecast</p></a></li>
 					<li><a href="about.html"><p class="navbar-text"><span class="glyphicon glyphicon-th-list"></span> About Us</p></a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="http://iwfm.buet.ac.bd/iwfm/" target="_blank"><img src="artworks/logo/buet.png" class="img-responsive"></a></li>
-					<li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
-					<li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><p class="navbar-text"><span class="glyphicon glyphicon-stats"></span> Important Links<b class="caret"></b></p></a>
+						<ul class="dropdown-menu">
+							<li><a href="http://iwfm.buet.ac.bd/iwfm/" target="_blank"><img src="artworks/logo/buet.png" class="img-responsive"></a></li>
+							<li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
+							<li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
+						</ul>
+					</li>
 				</ul>
 				</div><!-- collapse -->
 			</div><!-- /.container-fluid -->
@@ -55,9 +59,302 @@
         
         <div class="row">
 			<div class="col-md-12">
-				<p class="text-center">Flash Flood Early Warning System (FFEWS) <br/> Details coming soon!</p>
+				<div class="alert alert-danger"><p class="text-center">The forecast published here is currently provided in experimental basis.</p></div>
 			</div>
-        </div>
+		</div>
+        
+        <!-- Peoples list -->
+		<div class="row">
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/akmsaifulislam/">
+							  <img class="thumb media-object" src="artworks/peoples/saiful.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Dr. A.K.M Saiful Islam <span class="text-muted small"><br>Ph.D, Drexel University, USA</span></h4>
+							  <p>Professor</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7923
+								  <a href="http://teacher.buet.ac.bd/akmsaifulislam/">http://teacher.buet.ac.bd/akmsaifulislam/</a>
+								  <abbr title="Email">Email:</abbr> akmsaifulislam@iwfm.buet.ac.bd
+							  </address>
+							  <p>Principal Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/tarek/">
+							  <img class="thumb media-object" src="artworks/peoples/tarek.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Dr. G.M. Tarekul Islam <span class="text-muted small"><br>Ph.D, Tokyo University, Japan</span></h4>
+							  <p>Professor</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7769
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/tarek/</a><br>
+								  <abbr title="Email">Email:</abbr> tarek@iwfm.buet.ac.bd
+							  </address>
+							  <p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/bala/">
+							  <img class="thumb media-object" src="artworks/peoples/bala.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Dr. Sujit Kumar Bala <span class="text-muted small"><br>Ph.D, Tashkent Engineering Institute of Irrigation, USSR</span></h4>
+							  <p>Professor</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/bala/</a><br>
+								  <abbr title="Email">Email:</abbr> bala@iwfm.buet.ac.bd
+							  </address>
+							  <p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/mashfiqussalehin/">
+							  <img class="thumb media-object" src="artworks/peoples/mashfiqus.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Dr. Mashfiqus Salehin <span class="text-muted small"><br>Ph.D, Northwestern University (USA)</span></h4>
+							  <p>Professor and Director</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/mashfiqussalehin/">http://teacher.buet.ac.bd/mashfiqussalehin/</a><br>
+								  <abbr title="Email">Email:</abbr> mashfiqussalehin@iwfm.buet.ac.bd
+							  </address>
+							  <br><p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/mshahjahanmondal/">
+							  <img class="thumb media-object" src="artworks/peoples/mondal.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Dr. Shahjahan Mondal <span class="text-muted small"><br>Ph.D, Central Queensland University, Australia</span></h4>
+							  <p>Professor</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691<br>
+								  <a href="http://teacher.buet.ac.bd/mshahjahanmondal/">teacher.buet.ac.bd/mshahjahanmondal/</a><br>
+								  <abbr title="Email">Email:</abbr> mshahjahanmondal@iwfm.buet.ac.bd
+							  </address>
+							  <p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="#">
+							  <img class="thumb media-object" src="artworks/peoples/female.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Shammi Haque <span class="text-muted small"><br>B.Sc, Bangladesh University of Engineering and Technology</span></h4>
+							  <p>Lecturer</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/bala/</a><br>
+								  <abbr title="Email">Email:</abbr> TODO@iwfm.buet.ac.bd
+							  </address>
+							  <p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/TODO/">
+							  <img class="thumb media-object" src="artworks/peoples/female.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Binata Roy <span class="text-muted small"><br>B.Sc, Bangladesh University of Engineering and Technology</span></h4>
+							  <p>Lecturer</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/TODO/</a><br>
+								  <abbr title="Email">Email:</abbr> TODO@iwfm.buet.ac.bd
+							  </address>
+							  <p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/TODO/">
+							  <img class="thumb media-object" src="artworks/peoples/male.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Partho Das <span class="text-muted small"><br>B.Sc, Bangladesh University of Engineering and Technology</span></h4>
+							  <p>Lecturer</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/TODO/</a><br>
+								  <abbr title="Email">Email:</abbr> TODO@iwfm.buet.ac.bd
+							  </address>
+							  <p>Co-Investigator, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/TODO/">
+							  <img class="thumb media-object" src="artworks/peoples/mohan.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Mohan K. Das <span class="text-muted small"><br>Ph.D, Jahangirnagar University</span></h4>
+							  <p>Researcher</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/TODO/</a><br>
+								  <abbr title="Email">Email:</abbr> mohansmrc@gmail.com
+							  </address>
+							  <p>Research Associate, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://jamal919.github.io/">
+							  <img class="thumb media-object" src="artworks/peoples/jamal.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Md. Jamal Uddin Khan <span class="text-muted small"><br>B.Sc, Bangladesh University of Engineering and Technology, Bangladesh</span></h4>
+							  <p>Research Assistant</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4
+								  <a href="http://jamal919.github.io">http://jamal919.github.io/</a><br>
+								  <abbr title="Email">Gmail:</abbr> jamal919
+							  </address>
+							  <p>Weather Modelling, Big Data Analysis, Automated Forecasting System Development, Website Development</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/TODO/">
+							  <img class="thumb media-object" src="artworks/peoples/male.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Dipayan Shikdar <span class="text-muted small"><br>B.Sc, Bangladesh University of Engineering and Technology, Bangladesh</span></h4>
+							  <p>Research Assistant</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/tarek/">http://teacher.buet.ac.bd/TODO/</a><br>
+								  <abbr title="Email">Email:</abbr> TODO@iwfm.buet.ac.bd
+							  </address>
+							  <p>Research Assistant, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+			
+			<div class="col-md-6 col-sm-6">
+				<div class="panel">
+				  <div class="panel-body">
+					  <div class="media">
+						  <a class="pull-left" href="http://teacher.buet.ac.bd/TODO/">
+							  <img class="thumb media-object" src="artworks/peoples/male.jpg" alt="">
+						  </a>
+						  <div class="media-body">
+							  <h4>Rafe-ul-Sougat <span class="text-muted small"><br>B.Sc, Bangladesh University of Engineering and Technology, Bangladesh</span></h4>
+							  <p>Research Assistant</p>
+							  <p>Institute of Water and Flood Management (IWFM)</p>
+							  <address>
+								  <strong>Bangladesh University of Engineering and Technology (BUET)</strong><br>
+								  <abbr title="Phone">P:</abbr> 880-2-8614640-4, Ext. 7691
+								  <a href="http://teacher.buet.ac.bd/TODO/">http://teacher.buet.ac.bd/TODO/</a><br>
+								  <abbr title="Email">Email:</abbr> TODO@iwfm.buet.ac.bd
+							  </address>
+							  <p>Research Assistant, FFEWS Project</p>
+						  </div>
+					  </div>
+				  </div>
+				</div>
+			</div>
+		</div>
+        
+        <!-- Peoples list ends -->
 
         <!-- Footer Starts -->
         <div class="row" style="background-color:white">

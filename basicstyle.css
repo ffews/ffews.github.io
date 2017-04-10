@@ -35,6 +35,10 @@ html, body {
     background: deepskyblue;
 }
 
+#people {
+	height: 100px;
+}
+
 .product .img-responsive {
     margin: 0 auto;
 }

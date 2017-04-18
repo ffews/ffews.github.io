@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.1">
 <Document id="ForecastStations">
-	<name>Stations01</name>
+	<name>Forecast Stations</name>
 	<Snippet maxLines="0"></Snippet>
 	<Style id="IconStyle00">
 		<IconStyle>
@@ -26,7 +26,123 @@
 		<Placemark id="ID_00000">
 			<name>Bhogai-Kangsa</name>
 			<Snippet maxLines="0"></Snippet>
-			<description></description>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Bhogai-Kangsa</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>0</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Serial No</td>
+
+<td>1</td>
+
+</tr>
+
+<tr>
+
+<td>Station ID</td>
+
+<td>36</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Station Name</td>
+
+<td>Jariajanjail</td>
+
+</tr>
+
+<tr>
+
+<td>River Name</td>
+
+<td>Bhogai-Kangsa</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Type</td>
+
+<td>Existing</td>
+
+</tr>
+
+<tr>
+
+<td>BTM X</td>
+
+<td>565763.25</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>BTM Y</td>
+
+<td>766168.69</td>
+
+</tr>
+
+<tr>
+
+<td>LAT</td>
+
+<td>90.654742</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LONG</td>
+
+<td>25.013606</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
 			<styleUrl>#IconStyle00</styleUrl>
 			<Point>
 				<coordinates>90.65497768505442,25.01163673676734,0</coordinates>
@@ -35,7 +151,123 @@
 		<Placemark id="ID_00001">
 			<name>Surma-Meghna</name>
 			<Snippet maxLines="0"></Snippet>
-			<description></description>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Surma-Meghna</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Serial No</td>
+
+<td>2</td>
+
+</tr>
+
+<tr>
+
+<td>Station ID</td>
+
+<td>269</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Station Name</td>
+
+<td>Sunamganj</td>
+
+</tr>
+
+<tr>
+
+<td>River_Name</td>
+
+<td>Surma-Meghna</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Type</td>
+
+<td>Existing</td>
+
+</tr>
+
+<tr>
+
+<td>BTM X</td>
+
+<td>642040.44</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>BTM Y</td>
+
+<td>773322.31</td>
+
+</tr>
+
+<tr>
+
+<td>LAT</td>
+
+<td>91.411507</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LONG</td>
+
+<td>25.072957</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
 			<styleUrl>#IconStyle00</styleUrl>
 			<Point>
 				<coordinates>91.40826065185985,25.07589758318572,0</coordinates>
@@ -44,7 +276,123 @@
 		<Placemark id="ID_00002">
 			<name>Kushiyara</name>
 			<Snippet maxLines="0"></Snippet>
-			<description></description>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>Kushiyara</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FID</td>
+
+<td>2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Serial No</td>
+
+<td>3</td>
+
+</tr>
+
+<tr>
+
+<td>Station ID</td>
+
+<td>175.5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Station Name</td>
+
+<td>Sherpur</td>
+
+</tr>
+
+<tr>
+
+<td>River Name</td>
+
+<td>Kushiyara</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Type</td>
+
+<td>Existing</td>
+
+</tr>
+
+<tr>
+
+<td>BTM X</td>
+
+<td>670516</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>BTM Y</td>
+
+<td>724537.81</td>
+
+</tr>
+
+<tr>
+
+<td>LAT</td>
+
+<td>91.687838</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LONG</td>
+
+<td>24.629499</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
 			<styleUrl>#IconStyle00</styleUrl>
 			<Point>
 				<coordinates>91.68190290998646,24.62862280427194,0</coordinates>

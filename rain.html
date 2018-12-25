@@ -1,129 +1,124 @@
 <!DOCTYPE html>
 <head>
-    <title>Flash Flood Early Warning System (FFEWS)</title>
-    <link rel="stylesheet" type="text/css" href="basicstyle.css" media="screen" />
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <title>Flash Flood Early Warning System (FFEWS)</title>
+  <link rel="stylesheet" type="text/css" href="basicstyle.css" media="screen" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
-    
-	<!-- Modal image script -->
-	<script type="text/javascript">
-		$(function() {
-		$('.pop').on('click', function() {
-			$('.imagepreview').attr('src', $(this).find('img').attr('src'));
-			$('#imagemodal').modal('show');   
-		});	
-		});
-	</script>
-	
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <meta name="viewport" content="initial-scale=1.0">
+  <meta charset="utf-8">
+  
+  <!-- Modal image script -->
+  <script type="text/javascript">
+    $(function() {
+    $('.pop').on('click', function() {
+    $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+    $('#imagemodal').modal('show');   
+    });	
+    });
+  </script>
+  
 </head>
 <body>
-    <div id="content">
-		
-		<!-- Navigation Section Start-->
-        <div class="row">
-			<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<span>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-					<a class="navbar-brand" href="index.html"><img src="artworks/banner/banner.png" class="img-responsive"></a>
-					</span>
-				</div>
+  <div id="content">
+    
+    <!-- Navigation Section Start-->
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container-fluid">
+	  <!-- Brand and toggle get grouped for better mobile display -->
+	  <div class="navbar-header">
+	    <span>
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+	      <a class="navbar-brand" href="index.html"><img src="artworks/banner/banner.png" class="img-responsive"></a>
+	    </span>
+	  </div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html"><p class="navbar-text"><span class="glyphicon glyphicon-home"></span> Home</p></a></li>
-					<li><a href="rain.html"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Rain Forecast</p></a></li>
-					<li><a href="#"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Flood Forecast</p></a></li>
-					<li><a href="about.html"><p class="navbar-text"><span class="glyphicon glyphicon-list-alt"></span> About Us</p></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><p class="navbar-text"><span class="glyphicon glyphicon-stats"></span> Important Links<b class="caret"></b></p></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://iwfm.buet.ac.bd/iwfm/" target="_blank"><img src="artworks/logo/buet.png" class="img-responsive"></a></li>
-							<li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
-							<li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
-						</ul>
-					</li>
-				</ul>
-				</div><!-- collapse -->
-			</div><!-- /.container-fluid -->
-			</nav>
-        </div>
-        <!-- Navigation Section Ends -->
-        
-        <div class="row">
-			<div class="col-md-12">
-				<div class="alert alert-danger"><p class="text-center">The forecast published here is currently provided in experimental basis.</p></div>
-			</div>
-		</div>
-        
-        <div class="row">
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><p class="text-center">24 Hours Forecast</p></div>
-					<div class="panel-body">
-						<a href="forecasts/rain/rain.000001.png"><img src="forecasts/rain/rain.000001.png" class="img-responsive"></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><p class="text-center">48 Hours Forecast</p></div>
-					<div class="panel-body">
-						<a href="forecasts/rain/rain.000002.png"><img src="forecasts/rain/rain.000002.png" class="img-responsive"></a>
-					</div>
-				</div>
-			</div>
-			<div class="col-md-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading"><p class="text-center">72 Hours Forecast</p></div>
-					<div class="panel-body">
-						<a href="forecasts/rain/rain.000003.png"><img src="forecasts/rain/rain.000003.png" class="img-responsive"></a>
-					</div>
-				</div>
-			</div>
-        </div>
-        
-        <!-- Creates the bootstrap modal where the image will appear -->
-		<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		  <div class="modal-dialog">
-			<div class="modal-content">
-			  <div class="modal-header">
-				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-				<h4 class="modal-title" id="myModalLabel">Image preview</h4>
-			  </div>
-			  <div class="modal-body">
-				<img src="" id="imagepreview" style="width: 400px; height: 264px;" >
-			  </div>
-			  <div class="modal-footer">
-				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-			  </div>
-			</div>
-		  </div>
-		</div>
-        
-        <!-- Footer Starts -->
-        <div class="row" style="background-color:white">
-            <div class="col-md-4"><div class="text-left"><img src="artworks/footer/footer.png" class="img-responsive"></div></div>
-            <div class="col-md-8"><p class="text-left">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
-        </div>
-        <!-- Footer Ends -->
-        
-    </div>    
+	  <!-- Collect the nav links, forms, and other content for toggling -->
+	  <div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+	    <ul class="nav navbar-nav">
+	      <li><a href="index.html"><p class="navbar-text"><span class="glyphicon glyphicon-home"></span> Home</p></a></li>
+	      <li><a href="rain.html"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Rain Forecast</p></a></li>
+	      <li><a href="#"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Flood Forecast</p></a></li>
+	      <li><a href="about.html"><p class="navbar-text"><span class="glyphicon glyphicon-list-alt"></span> About Us</p></a></li>
+	      <li class="dropdown">
+		<a href="#" class="dropdown-toggle" data-toggle="dropdown"><p class="navbar-text"><span class="glyphicon glyphicon-stats"></span> Important Links<b class="caret"></b></p></a>
+		<ul class="dropdown-menu">
+		  <li><a href="http://iwfm.buet.ac.bd/iwfm/" target="_blank"><img src="artworks/logo/buet.png" class="img-responsive"></a></li>
+		  <li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
+		  <li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
+		</ul>
+	      </li>
+	    </ul>
+	  </div><!-- collapse -->
+	</div><!-- /.container-fluid -->
+      </nav>
+    </div>
+    <!-- Navigation Section Ends -->
+
+    <!-- Forecast Image Section Starts -->
+    <div class="row">
+      <div class="col-md-4">
+	<div class="panel panel-primary">
+	  <div class="panel-heading"><p class="text-center">24 Hours Forecast</p></div>
+	  <div class="panel-body">
+	    <a href="forecasts/rain/rain.000001.png"><img src="forecasts/rain/rain.000001.png" class="img-responsive"></a>
+	  </div>
+	</div>
+      </div>
+      <div class="col-md-4">
+	<div class="panel panel-primary">
+	  <div class="panel-heading"><p class="text-center">48 Hours Forecast</p></div>
+	  <div class="panel-body">
+	    <a href="forecasts/rain/rain.000002.png"><img src="forecasts/rain/rain.000002.png" class="img-responsive"></a>
+	  </div>
+	</div>
+      </div>
+      <div class="col-md-4">
+	<div class="panel panel-primary">
+	  <div class="panel-heading"><p class="text-center">72 Hours Forecast</p></div>
+	  <div class="panel-body">
+	    <a href="forecasts/rain/rain.000003.png"><img src="forecasts/rain/rain.000003.png" class="img-responsive"></a>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+    <!-- Creates the bootstrap modal where the image will appear -->
+    <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+	<div class="modal-content">
+	  <div class="modal-header">
+	    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+	    <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+	  </div>
+	  <div class="modal-body">
+	    <img src="" id="imagepreview" style="width: 400px; height: 264px;" >
+	  </div>
+	  <div class="modal-footer">
+	    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	  </div>
+	</div>
+      </div>
+    </div>
+    
+    <!-- Footer Starts -->
+    <div class="row" style="background-color:white">
+      <div class="col-md-4"><div class="text-left"><img src="artworks/footer/footer.png" class="img-responsive"></div></div>
+      <div class="col-md-8"><p class="text-left">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
+    </div>
+    <!-- Footer Ends -->
+    
+  </div>    
 </body>

@@ -1,7 +1,7 @@
 html, body {
     height: 100%;
     margin: 0;
-    padding: auto;
+    padding-top: 65px;
 }
 #content {
     width: 95%;

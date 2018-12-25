@@ -90,12 +90,21 @@
 						suppressInfoWindows: true,
 						preserveViewport: true,
 						map: map
-						});
+					});
+					
+					var rivernetwork = "http://ffews.github.io/maplayers/rivers.kml";
+					var riverlayer = new google.maps.KmlLayer({
+						url: rivernetwork,
+						zIndex: 2,
+						suppressInfoWindows: true,
+						preserveViewport: true,
+						map: map
+					});
 					
 					var urlforecaststations = "http://ffews.github.io/maplayers/forecaststations.kml"+"?dummy="+(new Date()).getTime();		
 					var fstLayer = new google.maps.KmlLayer({
 						url: urlforecaststations,
-						zIndex: 2,
+						zIndex: 3,
 						suppressInfoWindows: true,
 						preserveViewport: true,
 						map: map
@@ -110,11 +119,11 @@
 						var divHydrograph = document.getElementById('stninfo');
 						divHydrograph.innerHTML = text;
 					}
-					// TODO
+					
 					var urlmetstations = "http://ffews.github.io/maplayers/metstations.kml"+"?dummy="+(new Date()).getTime();	
 					var metLayer = new google.maps.KmlLayer({
 						url: urlmetstations,
-						zIndex: 3,
+						zIndex: 4,
 						suppressInfoWindows: true,
 						preserveViewport: true,
 						map: map

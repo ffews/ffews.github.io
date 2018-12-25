@@ -83,17 +83,19 @@
 						mapTypeId: "terrain"
 						});
 					
-					//var urlbasinoutline = "http://ffews.github.io/maplayers/basinoutline.kml"+"?dummy="+(new Date()).getTime();	
-					//var basinLayer = new google.maps.KmlLayer({
-						//url: urlbasinoutline,
-						//suppressInfoWindows: true,
-						//preserveViewport: true,
-						//map: map
-						//});
+					var urlbasinoutline = "http://ffews.github.io/maplayers/basinoutline.kml"+"?dummy="+(new Date()).getTime();	
+					var basinLayer = new google.maps.KmlLayer({
+						url: urlbasinoutline,
+						zIndex: 1,
+						suppressInfoWindows: true,
+						preserveViewport: true,
+						map: map
+						});
 					
 					var urlforecaststations = "http://ffews.github.io/maplayers/forecaststations.kml"+"?dummy="+(new Date()).getTime();		
 					var fstLayer = new google.maps.KmlLayer({
 						url: urlforecaststations,
+						zIndex: 2,
 						suppressInfoWindows: true,
 						preserveViewport: true,
 						map: map
@@ -109,13 +111,14 @@
 						divHydrograph.innerHTML = text;
 					}
 					// TODO
-					//var urlmetstations = "http://ffews.github.io/maplayers/metstations.kml"+"?dummy="+(new Date()).getTime();	
-					//var metLayer = new google.maps.KmlLayer({
-						//url: urlmetstations,
-						//suppressInfoWindows: true,
-						//preserveViewport: true,
-						//map: map
-					//});
+					var urlmetstations = "http://ffews.github.io/maplayers/metstations.kml"+"?dummy="+(new Date()).getTime();	
+					var metLayer = new google.maps.KmlLayer({
+						url: urlmetstations,
+						zIndex: 3,
+						suppressInfoWindows: true,
+						preserveViewport: true,
+						map: map
+					});
 					
 					//metLayer.addListener('click', function(kmlEvent) {
 						//var content = kmlEvent.featureData.description;

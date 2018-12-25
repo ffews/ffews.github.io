@@ -15,170 +15,161 @@
     <meta charset="utf-8">
 </head>
 <body>
-<!-- Navigation Section Start-->
-        <div id="nav">
-			<nav class="navbar navbar-default navbar-fixed-top">
-			<div class="container-fluid">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<span>
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-					<a class="navbar-brand" href="index.html"><img src="artworks/banner/banner.png" class="img-responsive"></a>
-					</span>
-				</div>
+  <!-- Navigation Section Start-->
+  <div id="nav">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+	<!-- Brand and toggle get grouped for better mobile display -->
+	<div class="navbar-header">
+	  <span>
+	    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+	    <a class="navbar-brand" href="index.html"><img src="artworks/banner/banner.png" class="img-responsive"></a>
+	  </span>
+	</div>
 
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="index.html"><p class="navbar-text"><span class="glyphicon glyphicon-home"></span> Home</p></a></li>
-					<li><a href="rain.html"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Rain Forecast</p></a></li>
-					<li><a href="#"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Flood Forecast</p></a></li>
-					<li><a href="about.html"><p class="navbar-text"><span class="glyphicon glyphicon-list-alt"></span> About Us</p></a></li>
-					<li class="dropdown">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><p class="navbar-text"><span class="glyphicon glyphicon-stats"></span> Important Links<b class="caret"></b></p></a>
-						<ul class="dropdown-menu">
-							<li><a href="http://iwfm.buet.ac.bd/iwfm/" target="_blank"><img src="artworks/logo/buet.png" class="img-responsive"></a></li>
-							<li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
-							<li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
-						</ul>
-					</li>
-				</ul>
-				</div><!-- collapse -->
-			</div><!-- /.container-fluid -->
-			</nav>
-        </div>
-        <!-- Navigation section ends -->
+	<!-- Collect the nav links, forms, and other content for toggling -->
+	<div class="collapse navbar-collapse" id="bs-navbar-collapse-1">
+	  <ul class="nav navbar-nav">
+	    <li><a href="index.html"><p class="navbar-text"><span class="glyphicon glyphicon-home"></span> Home</p></a></li>
+	    <li><a href="rain.html"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Rain Forecast</p></a></li>
+	    <li><a href="#"><p class="navbar-text"><span class="glyphicon glyphicon-align-right"></span> Flood Forecast</p></a></li>
+	    <li><a href="about.html"><p class="navbar-text"><span class="glyphicon glyphicon-list-alt"></span> About Us</p></a></li>
+	    <li class="dropdown">
+	      <a href="#" class="dropdown-toggle" data-toggle="dropdown"><p class="navbar-text"><span class="glyphicon glyphicon-stats"></span> Important Links<b class="caret"></b></p></a>
+	      <ul class="dropdown-menu">
+		<li><a href="http://iwfm.buet.ac.bd/iwfm/" target="_blank"><img src="artworks/logo/buet.png" class="img-responsive"></a></li>
+		<li><a href="http://www.ffwc.gov.bd/" target="_blank"><img src="artworks/logo/ffwc.png" class="img-responsive"></a></li>
+		<li><a href="http://www.bmd.gov.bd/" target="_blank"><img src="artworks/logo/bmd.png" class="img-responsive"></a></li>
+	      </ul>
+	    </li>
+	  </ul>
+	</div><!-- collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+  </div>
+  <!-- Navigation section ends -->
   
-<div id="content">
-		
-		
-        
-        <!-- Experimental Warning -->
-        <div class="row">
-			<div class="col-md-12">
-				<div class="alert alert-danger"><p class="text-center">The forecast published here is currently provided in experimental basis.</p></div>
-			</div>
-		</div>
-		<!-- Experimental Warning Ends -->
-		
-		<!-- Map Content -->
-		<div class="col-md-8">
-			<div class="panel panel-primary">
-				<div class="panel-heading">Map Overview</div>
-				<div class="panel-body"><div id="map"></div></div>
-			</div>
-			<script>
-				function initMap() {
-					var map = new google.maps.Map(document.getElementById('map'), {
-						center: {lat: 24.78, lng: 92.36},
-						zoom: 7,
-						disableDefaultUI: true,
-						minZoom: 7,
-						maxZoom: 9,
-						mapTypeId: "terrain"
-						});
-					
-					var urlbasinoutline = "http://ffews.github.io/maplayers/basinoutline.kml"+"?dummy="+(new Date()).getTime();	
-					var basinLayer = new google.maps.KmlLayer({
-						url: urlbasinoutline,
-						zIndex: 1,
-						suppressInfoWindows: true,
-						preserveViewport: true,
-						map: map
-					});
-					
-					var rivernetwork = "http://ffews.github.io/maplayers/rivers.kml";
-					var riverlayer = new google.maps.KmlLayer({
-						url: rivernetwork,
-						zIndex: 2,
-						suppressInfoWindows: true,
-						preserveViewport: true,
-						map: map
-					});
-					
-					var urlforecaststations = "http://ffews.github.io/maplayers/forecaststations.kml"+"?dummy="+(new Date()).getTime();		
-					var fstLayer = new google.maps.KmlLayer({
-						url: urlforecaststations,
-						zIndex: 3,
-						suppressInfoWindows: true,
-						preserveViewport: true,
-						map: map
-					});
-					
-					fstLayer.addListener('click', function(kmlEvent) {
-						var text = kmlEvent.featureData.description;
-						showStationInformation(text);
-					});
-					
-					function showStationInformation(text) {
-						var divHydrograph = document.getElementById('stninfo');
-						divHydrograph.innerHTML = text;
-					}
-					
-					var urlmetstations = "http://ffews.github.io/maplayers/metstations.kml"+"?dummy="+(new Date()).getTime();	
-					var metLayer = new google.maps.KmlLayer({
-						url: urlmetstations,
-						zIndex: 4,
-						suppressInfoWindows: true,
-						preserveViewport: true,
-						map: map
-					});
-					
-					//metLayer.addListener('click', function(kmlEvent) {
-						//var content = kmlEvent.featureData.description;
-						//var imglink = content.split(',');
-						////var text = imglink[0]
-						//var text = '<a href="'+imglink[0]+'"><img src="'+imglink[0]+'" class="img-responsive"></a>';
-						//showForecastMeteogram(text);
-					//});
-					
-					//function showForecastMeteogram(text) {
-						//var divMeteogram = document.getElementById('stninfo');
-						//divMeteogram.innerHTML = text;
-					//}
-				}
-			</script>
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>
-		</div>
-		<!-- Map content Ends -->
-		
-		<!-- Map content right panel -->
-        <div class="row">
-            <div class="col-md-4">
-				
-				<div class="row">
-					<div class="col-md-12">
-						<div class="panel panel-primary">
-							<div class="panel-heading">Hydrograph</div>
-							<div class="panel-body"><div id="hydrograph"><p align=center>Under Active Development</p></div></div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="row">
-					<div class="col-md-12">
-						<div class="panel panel-primary">
-							<div class="panel-heading">Station Information</div>
-							<div class="panel-body" id="stninfo"><p align=center>Click on a station to get started!</p></div>
-						</div>
-					</div>
-				</div>	
-			
-            </div>
+  <div id="content">
+    
+    <!-- Map Content -->
+    <div class="col-md-8">
+      <div class="panel panel-primary">
+	<div class="panel-heading">Map Overview</div>
+	<div class="panel-body"><div id="map"></div></div>
+      </div>
+      <script>
+	function initMap() {
+	var map = new google.maps.Map(document.getElementById('map'), {
+	center: {lat: 24.78, lng: 92.36},
+	zoom: 7,
+	disableDefaultUI: true,
+	minZoom: 7,
+	maxZoom: 9,
+	mapTypeId: "terrain"
+	});
 
-        </div>
-        
-        <!-- Footer Starts -->
-        <div class="row" style="background-color:white">
-            <div class="col-md-4"><div class="text-left"><img src="artworks/footer/footer.png" class="img-responsive"></div></div>
-            <div class="col-md-8"><p class="text-left">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
-        </div>
-        <!-- Footer Ends -->
-        
-    </div>    
+	var urlbasinoutline = "http://ffews.github.io/maplayers/basinoutline.kml"+"?dummy="+(new Date()).getTime();	
+	var basinLayer = new google.maps.KmlLayer({
+	url: urlbasinoutline,
+	zIndex: 1,
+	suppressInfoWindows: true,
+	preserveViewport: true,
+	map: map
+	});
+
+	var rivernetwork = "http://ffews.github.io/maplayers/rivers.kml";
+	var riverlayer = new google.maps.KmlLayer({
+	url: rivernetwork,
+	zIndex: 2,
+	suppressInfoWindows: true,
+	preserveViewport: true,
+	map: map
+	});
+
+	var urlforecaststations = "http://ffews.github.io/maplayers/forecaststations.kml"+"?dummy="+(new Date()).getTime();		
+	var fstLayer = new google.maps.KmlLayer({
+	url: urlforecaststations,
+	zIndex: 3,
+	suppressInfoWindows: true,
+	preserveViewport: true,
+	map: map
+	});
+
+	fstLayer.addListener('click', function(kmlEvent) {
+	var text = kmlEvent.featureData.description;
+	showStationInformation(text);
+	});
+
+	function showStationInformation(text) {
+	var divHydrograph = document.getElementById('stninfo');
+	divHydrograph.innerHTML = text;
+	}
+
+	var urlmetstations = "http://ffews.github.io/maplayers/metstations.kml"+"?dummy="+(new Date()).getTime();	
+	var metLayer = new google.maps.KmlLayer({
+	url: urlmetstations,
+	zIndex: 4,
+	suppressInfoWindows: true,
+	preserveViewport: true,
+	map: map
+	});
+
+	//metLayer.addListener('click', function(kmlEvent) {
+	//var content = kmlEvent.featureData.description;
+	//var imglink = content.split(',');
+	////var text = imglink[0]
+	//var text = '<a href="'+imglink[0]+'"><img src="'+imglink[0]+'" class="img-responsive"></a>';
+	//showForecastMeteogram(text);
+	//});
+
+	//function showForecastMeteogram(text) {
+	//var divMeteogram = document.getElementById('stninfo');
+	//divMeteogram.innerHTML = text;
+	//}
+	}
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBY4fK0xR7RXivgieKa8XLE2LwnLd9V6-Q&callback=initMap"></script>
+    </div>
+    <!-- Map content Ends -->
+    
+    <!-- Map content right panel -->
+    <div class="row">
+      <div class="col-md-4">
+
+	<!-- Hydrograph -->
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-primary">
+	      <div class="panel-heading">Hydrograph</div>
+	      <div class="panel-body"><div id="hydrograph"><p align=center>Under Active Development</p></div></div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Station Info -->
+	<div class="row">
+	  <div class="col-md-12">
+	    <div class="panel panel-primary">
+	      <div class="panel-heading">Station Information</div>
+	      <div class="panel-body" id="stninfo"><p align=center>Click on a station to get started!</p></div>
+	    </div>
+	  </div>
+	</div>	
+	
+      </div>
+    </div>
+    
+    <!-- Footer Starts -->
+    <div class="row" style="background-color:white">
+      <div class="col-md-4"><div class="text-left"><img src="artworks/footer/footer.png" class="img-responsive"></div></div>
+      <div class="col-md-8"><p class="text-left">This research is being carried out by Bangladesh University of Engineering and Technology under Haor Imporovement and Livlihood Protection (HILIP) funded by International Fund for Agricultural Development (IFAD).</p></div>
+    </div>
+    <!-- Footer Ends -->
+    
+  </div>    
 </body>
